@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-'''Task 8's module.
-'''
+
+"""
+a python function that list all document in a collection
+"""
+import pymongo
 
 
 def list_all(mongo_collection):
-    '''Lists all documents in a collection.
-    '''
-    return [doc for doc in mongo_collection.find()]
+    all_doc = []
+    for doc in mongo_collection.find():
+        all_doc.append(doc)
+    return (all_doc)

@@ -1,2 +1,3 @@
-// Lists all documents in the school collection.
-db.school.find().forEach(printjson);
+// a script that lists all documents in the collection school
+
+db.school.find()

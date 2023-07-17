@@ -1,2 +1,4 @@
-// Lists all documents with name="Holberton school" in the school collection.
-db.school.find({name: "Holberton school"}).forEach(printjson);
+// Write a script that lists all documents with
+// name="Holberton school" in the collection school
+
+db.school.find({"name": "Holberton school"})

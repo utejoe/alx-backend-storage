@@ -1,2 +1,3 @@
-// Uses or creates a MongoDB database.
-use my_db;
+// a script that create or use databases
+
+use my_db
