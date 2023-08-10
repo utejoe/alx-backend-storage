@@ -1,13 +1,12 @@
-#!/usr/bin/python3
-
+#!/usr/bin/env python3
 """
-a Python function that inserts a new document
-in a collection based on kwargs
+This module have a utility function that insert documents
 """
 import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
-    new_doc = kwargs
-    doc = mongo_collection.insert_one(new_doc)
-    return (doc.inserted_id)
+    """
+    insert into school
+    """
+    return mongo_collection.insert_one(kwargs).inserted_id
